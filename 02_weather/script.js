@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const cityNameDisplay = document.getElementById("city-name");
   const temperatureDisplay = document.getElementById("temperature");
   const descriptionDisplay = document.getElementById("description");
-  const errorMessage = document.getElementById("error-messag");
+  const errorMessage = document.getElementById("error-message");
 
   const API_KEY = "5f56d525d1619d0a2cd2eac4ce55588e"; //env variables
 
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function showError() {
-    weatherInfo.classList.remove("hidden");
-    errorMessage.classList.add("hidden");
+    weatherInfo.classList.add("hidden");
+    errorMessage.classList.remove("hidden");
   }
 });
